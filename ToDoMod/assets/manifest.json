@@ -1,13 +1,13 @@
 ﻿{
    "Name": "To Do List",
-   "Author": "eleanoot",
+   "Author": "lordfirespeed",
    "Version": {
-      "MajorVersion": 1,
+      "MajorVersion": 2,
       "MinorVersion": 0,
       "PatchVersion": 0,
       "Build": null
    },
    "Description": "Record the other little tasks you were up to.",
-   "UniqueID": "eleanoot.todolist",
+   "UniqueID": "lordfirespeed.todolist",
    "EntryDll": "ToDoMod.dll"
 }
