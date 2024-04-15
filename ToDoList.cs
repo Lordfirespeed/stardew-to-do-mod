@@ -348,7 +348,7 @@ namespace ToDoMod
         public override void receiveKeyPress(Keys key)
         {
             /* If the to do list is open and we've hit escape or the configured open list key */
-            if (((key == Keys.Escape) || key.ToString().Equals(this.Config.OpenListKey)) && this.readyToClose() && this.CanClose)
+            if (((key == Keys.Escape) || Config.ToggleListKey.JustPressed()) && this.readyToClose() && this.CanClose)
             {
                 isOpen = false;
                 CanClose = false;
