@@ -2,9 +2,6 @@
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
-using StardewValley.Menus;
-
-using Microsoft.Xna.Framework.Input;
 
 namespace ToDoMod;
 
