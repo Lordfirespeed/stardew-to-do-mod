@@ -28,7 +28,3 @@ The mod can be configured to change its default settings and enable additional f
 | `OpenListKey` | F2 | The button that opens the to do list. A keyboard key cannot be a commonly typed character, or it will affect typing in the textbox- if the mod detects an invalid key, it will reset to default.
 | `UseLargerFont` | false     | If enabled, switches all menu text to a larger font, but gives less characters to type tasks in.
 | `OpenOnStartup` | false | If enabled, as soon as your save file is loaded, the to do list will appear to remind you of the tasks you had saved since last time.
-
-## Versions
-1.0:
-* Initial release.
