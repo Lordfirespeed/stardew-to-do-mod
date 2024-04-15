@@ -1,12 +1,7 @@
 ﻿{
    "Name": "To Do List",
    "Author": "lordfirespeed",
-   "Version": {
-      "MajorVersion": 2,
-      "MinorVersion": 0,
-      "PatchVersion": 0,
-      "Build": null
-   },
+   "Version": "2.0.0",
    "Description": "Record the other little tasks you were up to.",
    "UniqueID": "lordfirespeed.todolist",
    "EntryDll": "ToDoMod.dll"
