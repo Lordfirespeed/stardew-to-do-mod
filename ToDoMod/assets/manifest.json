@@ -4,5 +4,6 @@
    "Version": "2.0.0",
    "Description": "Record the other little tasks you were up to.",
    "UniqueID": "lordfirespeed.todolist",
+   "MinimumApiVersion": "4.0.0",
    "EntryDll": "ToDoMod.dll"
 }
