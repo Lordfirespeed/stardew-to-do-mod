@@ -6,11 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework.Input;
 
-namespace ToDoMod
-{
-    class ModData
-    {
-        public StringCollection SavedTasks { get; set; } = new StringCollection();
+namespace ToDoMod;
 
-    }
+class ModData
+{
+    public StringCollection SavedTasks { get; set; } = new StringCollection();
+
 }

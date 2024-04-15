@@ -8,20 +8,20 @@ using StardewModdingAPI;
 using StardewValley;
 using StardewValley.Menus;
 
-namespace ToDoMod
+namespace ToDoMod;
+
+class TaskType : IClickableMenu
 {
-    class TaskType : IClickableMenu
-    {
-        public TextBox textBox;
-        public ClickableComponent textBoxCC;
-        private TextBoxEvent e;
+    public TextBox textBox;
+    public ClickableComponent textBoxCC;
+    private TextBoxEvent e;
         
-        public const int region_doneNamingButton = 202;
+    public const int region_doneNamingButton = 202;
 
-        public ClickableTextureComponent doneNamingButton;
+    public ClickableTextureComponent doneNamingButton;
 
-        public TaskType(SpriteFont fontToUse)
-        {
+    public TaskType(SpriteFont fontToUse)
+    {
             this.textBox = new TextBox((Texture2D)null, (Texture2D)null, fontToUse, Game1.textColor)
             {
                 /* Positioning stuff */
@@ -63,40 +63,34 @@ namespace ToDoMod
 
         }
 
-        /// <summary>
-        /// Take a key press - implemented to accept typing in the text box.
-        /// </summary>
-        public override void receiveKeyPress(Keys key)
-        {
+    /// <summary>
+    /// Take a key press - implemented to accept typing in the text box.
+    /// </summary>
+    public override void receiveKeyPress(Keys key)
+    {
             if (this.textBox.Selected || Game1.options.doesInputListContain(Game1.options.menuButton, key))
                 return;
             base.receiveKeyPress(key);
         }
 
 
-        /// <summary>
-        /// Draw the components to the screen.
-        /// </summary>
-        public override void draw(SpriteBatch batch)
-        {
+    /// <summary>
+    /// Draw the components to the screen.
+    /// </summary>
+    public override void draw(SpriteBatch batch)
+    {
             base.draw(batch);
             this.textBox.Draw(batch);
             this.doneNamingButton.draw(batch);
         }
 
-        public bool Selected { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    public bool Selected { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        /// <summary>
-        /// Not used, but needs implementing
-        /// </summary>
-        public override void receiveRightClick(int x, int y, bool playSound = true)
-        {
+    /// <summary>
+    /// Not used, but needs implementing
+    /// </summary>
+    public override void receiveRightClick(int x, int y, bool playSound = true)
+    {
 
         }
-    }
-
-
-
-
-
 }

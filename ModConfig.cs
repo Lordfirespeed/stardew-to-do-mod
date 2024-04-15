@@ -7,14 +7,13 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework.Input;
 using StardewModdingAPI.Utilities;
 
-namespace ToDoMod
+namespace ToDoMod;
+
+class ModConfig
 {
-    class ModConfig
-    {
-        public KeybindList ToggleListKey { get; set; } = KeybindList.Parse("F2");
+    public KeybindList ToggleListKey { get; set; } = KeybindList.Parse("F2");
 
-        public bool UseLargerFont { get; set; } = false;
+    public bool UseLargerFont { get; set; } = false;
 
-        public bool OpenAtStartup { get; set; } = false;
-    }
+    public bool OpenAtStartup { get; set; } = false;
 }
